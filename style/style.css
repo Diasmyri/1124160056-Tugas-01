@@ -1,0 +1,168 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'sans-serif';
+    font-size: 200%;
+}
+
+/* Navigation */
+nav {
+    background: #ff9a9e;
+    padding: 15px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav .menu ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.2s;
+    position: relative;
+}
+
+nav .menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #f1c40f;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav .menu ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#about:hover {
+    transform: scale(1.03);
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #222;
+    transition: transform 0.4s ease-in-out;
+}
+
+#about img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+#about h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #222;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Bio, Education & Work Experience */
+#bio {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    transition: transform 0.3s;
+}
+
+#bio:hover {
+    transform: scale(1.03);
+}
+
+#bio h2 {
+    text-align: left;
+    color: #222;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#bio h3 {
+    color: #e67e22;
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bio ul {
+    padding-left: 20px;
+}
+
+#bio li {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
